@@ -1,0 +1,67 @@
+---
+title: "Hex Sticker"
+description: |
+  How to create a hex sticker for a new package
+author:
+  - name: Nora Jones 
+    url: https://example.com/norajones
+    affiliation: Spacely Sprockets
+    affiliation_url: https://example.com/spacelysprokets
+date: "`r Sys.Date()`"
+output: distill::distill_article
+---
+
+In this post,
+I want to describe how I created a hex sticker for one of my shiny apps.
+The app itself lets users interactively explore their Strava data.
+
+Because I called the app `SummitR`, I decided to display one of the most famous
+summit finishes in cycling history: Alpe d'Huez.
+
+```{r, include=FALSE}
+knitr::read_chunk("hex_sticker.R")
+```
+
+I am using the following packages:
+
+```{r libraries, message=FALSE, warning=FALSE}
+```
+
+The `hexSticker` package is used to create the final sticker.
+
+Because I already climbed Alpe d'Huez on a previous occasion, I can get the data
+already prepared from a private github repository. The data in the corresponding
+repository is organised as a [pin](https://github.com/rstudio/pins):
+
+```{r alpe_dhuez_act}
+```
+
+In raw table form the data of the activity looks like this:
+
+```{r, echo=FALSE}
+df_act 
+```
+
+Create a minimalistic plot of the activity. Only take variables `lat` and `lng`
+into account:
+
+```{r gg_act}
+```
+
+Plot the path of the activity on a black background:
+
+```{r, minimal_path_dark}
+gg_act +
+  theme_dark()
+```
+
+Save the finished hex sticker as result. Use the official Strava color as
+background color.
+
+```{r save_result}
+```
+
+```{r, preview=TRUE}
+knitr::include_graphics("hex_sticker.png")
+```
+
