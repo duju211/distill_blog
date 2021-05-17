@@ -1,5 +1,5 @@
 ---
-title: "My Blog"
+title: "Datannery"
 site: distill::distill_website
 listing: posts
 ---

@@ -3,10 +3,8 @@ title: "Hex Sticker"
 description: |
   How to create a hex sticker for a new package
 author:
-  - name: Nora Jones 
-    url: https://example.com/norajones
-    affiliation: Spacely Sprockets
-    affiliation_url: https://example.com/spacelysprokets
+  - name: Julian During
+    url: https://twitter.com/OACantona
 date: "`r Sys.Date()`"
 output: distill::distill_article
 ---

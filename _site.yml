@@ -1,7 +1,7 @@
 name: "distill_blog"
-title: "My Blog"
+title: "Datannery"
 description: |
-  My Blog
+  Personal Blog of Julian During
 output_dir: "_site"
 navbar:
   right:
