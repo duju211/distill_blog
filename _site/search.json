@@ -6,14 +6,14 @@
       "description": "Some additional details about the blog",
       "author": [],
       "contents": "\r\n\r\n\r\n\r\n",
-      "last_modified": "2021-05-23T18:20:46+02:00"
+      "last_modified": "2021-05-23T18:47:15+02:00"
     },
     {
       "path": "index.html",
       "title": "Datannery",
       "author": [],
       "contents": "\r\n\r\n\r\n\r\n",
-      "last_modified": "2021-05-23T18:20:47+02:00"
+      "last_modified": "2021-05-23T18:47:16+02:00"
     }
   ],
   "collections": ["posts/posts.json"]

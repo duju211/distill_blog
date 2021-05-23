@@ -59,7 +59,7 @@ background color.
 ```{r save_result}
 ```
 
-```{r, preview=TRUE}
-knitr::include_graphics("hex_sticker.png")
+```{r, preview=TRUE, echo=FALSE}
+knitr::include_graphics("hex_sticker_wide.png")
 ```
 
