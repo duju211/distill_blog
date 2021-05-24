@@ -3,17 +3,16 @@
     {
       "path": "about.html",
       "title": "About this blog",
-      "description": "Some additional details about the blog",
       "author": [],
-      "contents": "\r\n\r\n\r\n\r\n",
-      "last_modified": "2021-05-23T21:28:44+02:00"
+      "contents": "\r\nHi there! This is the personal blog of Julian During. In this blog I combine my professional and personal interest in Data Science and Analytics.\r\nFind me online:\r\n@OACantona\r\n@duju211\r\n\r\n\r\n\r\n",
+      "last_modified": "2021-05-24T11:02:09+02:00"
     },
     {
       "path": "index.html",
       "title": "Datannery",
       "author": [],
       "contents": "\r\n\r\n\r\n\r\n",
-      "last_modified": "2021-05-23T21:28:50+02:00"
+      "last_modified": "2021-05-24T11:02:11+02:00"
     }
   ],
   "collections": ["posts/posts.json"]

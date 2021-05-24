@@ -1,9 +1,15 @@
 ---
 title: "About this blog"
-description: |
-  Some additional details about the blog
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 ```
+
+Hi there! This is the personal blog of Julian During. In this blog I combine
+my professional and personal interest in Data Science and Analytics.
+
+Find me online:
+
+  - `r fontawesome::fa("twitter")` [`@OACantona`](https://twitter.com/OACantona)
+  - `r fontawesome::fa("github")` [`@duju211`](https://github.com/duju211)
