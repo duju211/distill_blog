@@ -18,7 +18,7 @@
  <!--radix_placeholder_import_source-->
 
 <script type="text/json" id="radix-import-source">
-{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["url","sha1"]}},"value":[{"type":"character","attributes":{},"value":["https://github.com/duju211/pin_strava"]},{"type":"character","attributes":{},"value":["0b32cc8291a40558e05b28c4eb6d23a09a8b602b"]}]}
+{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["url","sha1"]}},"value":[{"type":"character","attributes":{},"value":["https://github.com/duju211/pin_strava"]},{"type":"character","attributes":{},"value":["6d6c79cd7e06fd3640316ce96bd9e20bd31c75e5"]}]}
 </script>
 <!--/radix_placeholder_import_source-->
 
@@ -95,6 +95,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 <meta property="description" itemprop="description" content="Article on how to effectively scrape and store Strava data using the `targets`&#10;package"/>
 
+<link rel="canonical" href="https://www.datannery.com/posts/strava-data/"/>
 <link rel="license" href="https://creativecommons.org/licenses/by/4.0/"/>
 
 <!--  https://schema.org/Article -->
@@ -106,19 +107,34 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <meta property="og:title" content="Datannery: Strava Data"/>
 <meta property="og:type" content="article"/>
 <meta property="og:description" content="Article on how to effectively scrape and store Strava data using the `targets`&#10;package"/>
+<meta property="og:url" content="https://www.datannery.com/posts/strava-data/"/>
+<meta property="og:image" content="https://www.datannery.com/posts/strava-data/distill-preview.png"/>
+<meta property="og:image:width" content="2100"/>
+<meta property="og:image:height" content="2100"/>
 <meta property="og:locale" content="en_US"/>
 <meta property="og:site_name" content="Datannery"/>
 
 <!--  https://dev.twitter.com/cards/types/summary -->
-<meta property="twitter:card" content="summary"/>
+<meta property="twitter:card" content="summary_large_image"/>
 <meta property="twitter:title" content="Datannery: Strava Data"/>
 <meta property="twitter:description" content="Article on how to effectively scrape and store Strava data using the `targets`&#10;package"/>
+<meta property="twitter:url" content="https://www.datannery.com/posts/strava-data/"/>
+<meta property="twitter:image" content="https://www.datannery.com/posts/strava-data/distill-preview.png"/>
+<meta property="twitter:image:width" content="2100"/>
+<meta property="twitter:image:height" content="2100"/>
 
+<!--  https://scholar.google.com/intl/en/scholar/inclusion.html#indexing -->
+<meta name="citation_title" content="Datannery: Strava Data"/>
+<meta name="citation_fulltext_html_url" content="https://www.datannery.com/posts/strava-data/"/>
+<meta name="citation_fulltext_world_readable" content=""/>
+<meta name="citation_online_date" content="2021/11/09"/>
+<meta name="citation_publication_date" content="2021/11/09"/>
+<meta name="citation_author" content="Julian During"/>
 <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
 <script type="text/json" id="radix-rmarkdown-metadata">
-{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","author","date","output","repository_url","creative_commons"]}},"value":[{"type":"character","attributes":{},"value":["Strava Data"]},{"type":"character","attributes":{},"value":["Article on how to effectively scrape and store Strava data using the `targets`\npackage"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name"]}},"value":[{"type":"character","attributes":{},"value":["Julian During"]}]}]},{"type":"character","attributes":{},"value":["11-09-2021"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["html_document"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["code_folding","theme"]}},"value":[{"type":"character","attributes":{},"value":["hide"]},{"type":"character","attributes":{},"value":["cosmo"]}]}]},{"type":"character","attributes":{},"value":["https://github.com/duju211/pin_strava"]},{"type":"character","attributes":{},"value":["CC BY"]}]}
+{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","author","date","output","repository_url","creative_commons","base_url","citation_url","canonical_url"]}},"value":[{"type":"character","attributes":{},"value":["Strava Data"]},{"type":"character","attributes":{},"value":["Article on how to effectively scrape and store Strava data using the `targets`\npackage"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name"]}},"value":[{"type":"character","attributes":{},"value":["Julian During"]}]}]},{"type":"character","attributes":{},"value":["11-09-2021"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["html_document"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["code_folding","theme"]}},"value":[{"type":"character","attributes":{},"value":["hide"]},{"type":"character","attributes":{},"value":["cosmo"]}]}]},{"type":"character","attributes":{},"value":["https://github.com/duju211/pin_strava"]},{"type":"character","attributes":{},"value":["CC BY"]},{"type":"character","attributes":{},"value":["https://www.datannery.com/posts/strava-data/"]},{"type":"character","attributes":{},"value":["https://www.datannery.com/posts/strava-data/"]},{"type":"character","attributes":{},"value":["https://www.datannery.com/posts/strava-data/"]}]}
 </script>
 <!--/radix_placeholder_rmarkdown_metadata-->
   
@@ -3041,6 +3057,16 @@ d-appendix d-footnote-list a.footnote-backlink {
   <p>If you see mistakes or want to suggest changes, please <a href="https://github.com/duju211/pin_strava/issues/new">create an issue</a> on the source repository.</p>
   <h3 id="reuse">Reuse</h3>
   <p>Text and figures are licensed under Creative Commons Attribution <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. Source code is available at <a href="https://github.com/duju211/pin_strava">https://github.com/duju211/pin_strava</a>, unless otherwise noted. The figures that have been reused from other sources don't fall under this license and can be recognized by a note in their caption: "Figure from ...".</p>
+  <h3 id="citation">Citation</h3>
+  <p>For attribution, please cite this work as</p>
+  <pre class="citation-appendix short">During (2021, Nov. 9). Datannery: Strava Data. Retrieved from https://www.datannery.com/posts/strava-data/</pre>
+  <p>BibTeX citation</p>
+  <pre class="citation-appendix long">@misc{during2021strava,
+  author = {During, Julian},
+  title = {Datannery: Strava Data},
+  url = {https://www.datannery.com/posts/strava-data/},
+  year = {2021}
+}</pre>
 </div>
 <!--/radix_placeholder_appendices-->
 <!--radix_placeholder_navigation_after_body-->
