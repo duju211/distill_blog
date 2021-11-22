@@ -18,7 +18,7 @@
  <!--radix_placeholder_import_source-->
 
 <script type="text/json" id="radix-import-source">
-{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["url","sha1"]}},"value":[{"type":"character","attributes":{},"value":["https://github.com/duju211/pin_strava"]},{"type":"character","attributes":{},"value":["6d6c79cd7e06fd3640316ce96bd9e20bd31c75e5"]}]}
+{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["url","sha1"]}},"value":[{"type":"character","attributes":{},"value":["https://github.com/duju211/pin_strava"]},{"type":"character","attributes":{},"value":["4a65aa3647ec3e1cbea4ef39dcb59c85bc1a3ae7"]}]}
 </script>
 <!--/radix_placeholder_import_source-->
 
@@ -98,8 +98,8 @@ package" />
 
 
   <!--  https://schema.org/Article -->
-  <meta property="article:published" itemprop="datePublished" content="2021-11-09" />
-  <meta property="article:created" itemprop="dateCreated" content="2021-11-09" />
+  <meta property="article:published" itemprop="datePublished" content="2021-11-22" />
+  <meta property="article:created" itemprop="dateCreated" content="2021-11-22" />
   <meta name="article:author" content="Julian During" />
 
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
@@ -119,7 +119,7 @@ package" />
   <!--radix_placeholder_rmarkdown_metadata-->
 
 <script type="text/json" id="radix-rmarkdown-metadata">
-{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","author","date","output","repository_url","creative_commons","base_url"]}},"value":[{"type":"character","attributes":{},"value":["Strava Data"]},{"type":"character","attributes":{},"value":["Article on how to effectively scrape and store Strava data using the `targets`\npackage"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name"]}},"value":[{"type":"character","attributes":{},"value":["Julian During"]}]}]},{"type":"character","attributes":{},"value":["11-09-2021"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["html_document"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["code_folding","theme"]}},"value":[{"type":"character","attributes":{},"value":["hide"]},{"type":"character","attributes":{},"value":["cosmo"]}]}]},{"type":"character","attributes":{},"value":["https://github.com/duju211/pin_strava"]},{"type":"character","attributes":{},"value":["CC BY"]},{"type":"character","attributes":{},"value":["https://www.datannery.com/posts/strava-data/"]}]}
+{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","author","date","output","repository_url","creative_commons","base_url"]}},"value":[{"type":"character","attributes":{},"value":["Strava Data"]},{"type":"character","attributes":{},"value":["Article on how to effectively scrape and store Strava data using the `targets`\npackage"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name"]}},"value":[{"type":"character","attributes":{},"value":["Julian During"]}]}]},{"type":"character","attributes":{},"value":["11-22-2021"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["html_document"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["code_folding","theme"]}},"value":[{"type":"character","attributes":{},"value":["hide"]},{"type":"character","attributes":{},"value":["cosmo"]}]}]},{"type":"character","attributes":{},"value":["https://github.com/duju211/pin_strava"]},{"type":"character","attributes":{},"value":["CC BY"]},{"type":"character","attributes":{},"value":["https://www.datannery.com/posts/strava-data/"]}]}
 </script>
 <!--/radix_placeholder_rmarkdown_metadata-->
   
@@ -1466,7 +1466,7 @@ package" />
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Strava Data","description":"Article on how to effectively scrape and store Strava data using the `targets`\npackage","authors":[{"author":"Julian During","authorURL":"#","affiliation":"&nbsp;","affiliationURL":"#","orcidID":""}],"publishedDate":"2021-11-09T00:00:00.000+01:00"}
+{"title":"Strava Data","description":"Article on how to effectively scrape and store Strava data using the `targets`\npackage","authors":[{"author":"Julian During","authorURL":"#","affiliation":"&nbsp;","affiliationURL":"#","orcidID":""}],"publishedDate":"2021-11-22T00:00:00.000+01:00"}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -1485,7 +1485,7 @@ package" />
 <div class="d-byline">
   Julian During  
   
-<br />2021-11-09
+<br />2021-11-22
 </div>
 
 <div class="d-article">
@@ -1599,8 +1599,8 @@ package" />
 <td style="text-align: left;">thorough</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">gg_meas</td>
-<td style="text-align: left;">vis_meas(df_meas_pro)</td>
+<td style="text-align: left;">df_meas_rel</td>
+<td style="text-align: left;">meas_rel(df_act, df_meas_pro)</td>
 <td style="text-align: left;">NA</td>
 <td style="text-align: left;">thorough</td>
 </tr>
@@ -1611,6 +1611,12 @@ package" />
 <td style="text-align: left;">thorough</td>
 </tr>
 <tr class="even">
+<td style="text-align: left;">gg_meas</td>
+<td style="text-align: left;">vis_meas(df_meas_rel)</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">thorough</td>
+</tr>
+<tr class="odd">
 <td style="text-align: left;">gg_meas_save</td>
 <td style="text-align: left;">save_gg_meas(gg_meas)</td>
 <td style="text-align: left;">NA</td>
@@ -1647,6 +1653,14 @@ package" />
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
 <pre class="sourceCode r"><code class="sourceCode r"><span class="va">define_strava_app</span> <span class="op">&lt;-</span> <span class="kw">function</span><span class="op">(</span><span class="op">)</span> <span class="op">{</span>
+  <span class="kw">if</span> <span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/Sys.getenv.html">Sys.getenv</a></span><span class="op">(</span><span class="st">&quot;STRAVA_KEY&quot;</span><span class="op">)</span> <span class="op">==</span> <span class="st">&quot;&quot;</span> <span class="op">|</span> <span class="fu"><a href="https://rdrr.io/r/base/Sys.getenv.html">Sys.getenv</a></span><span class="op">(</span><span class="st">&quot;STRAVA_SECRET&quot;</span><span class="op">)</span> <span class="op">==</span> <span class="st">&quot;&quot;</span><span class="op">)</span>
+    <span class="kw"><a href="https://rdrr.io/r/base/stop.html">stop</a></span><span class="op">(</span><span class="fu"><a href="https://stringr.tidyverse.org/reference/str_glue.html">str_glue</a></span><span class="op">(</span>
+      <span class="st">&quot;Please set system variables &#39;STRAVA_KEY&#39; and &#39;STRAVA_SECRET&#39; before &quot;</span>,
+      <span class="st">&quot;continuing. How you can create these variables is described here: &quot;</span>,
+      <span class="st">&quot;https://developers.strava.com/docs/getting-started/. &quot;</span>,
+      <span class="st">&quot;You can set the system variables with the `usethis::edit_r_environ` &quot;</span>,
+      <span class="st">&quot;function.&quot;</span><span class="op">)</span><span class="op">)</span>
+
   <span class="fu"><a href="https://httr.r-lib.org/reference/oauth_app.html">oauth_app</a></span><span class="op">(</span>
     appname <span class="op">=</span> <span class="st">&quot;r_api&quot;</span>,
     key <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/Sys.getenv.html">Sys.getenv</a></span><span class="op">(</span><span class="st">&quot;STRAVA_KEY&quot;</span><span class="op">)</span>,
@@ -1780,20 +1794,20 @@ package" />
 </div>
 <p>The resulting data frame consists of one row per activity:</p>
 <div class="layout-chunk" data-layout="l-body">
-<pre><code># A tibble: 605 x 60
+<pre><code># A tibble: 608 x 60
    resource_state name               distance moving_time elapsed_time
             &lt;int&gt; &lt;chr&gt;                 &lt;dbl&gt;       &lt;int&gt;        &lt;int&gt;
- 1              2 &quot;Hessen Kassel Wa~   31153.        4699         5267
- 2              2 &quot;Bambi Run&quot;           5888.        2421         2869
- 3              2 &quot;Lindich Backward~   33208.        4909         6071
- 4              2 &quot;Monastery Ride&quot;     74154.       10721        12500
- 5              2 &quot;Chapeau Sprint &quot;    34380         5001         5388
- 6              2 &quot;Morning Run&quot;         5518.        2345         2563
- 7              2 &quot;Binsenbol Afterw~   10022.        3681         6447
- 8              2 &quot;Trumpf Spin &quot;       47179.        8416        10102
- 9              2 &quot;Shoe \U0001f45e ~   32580.        5646         6027
-10              2 &quot;Mittagsradfahrt&quot;    33862.        5293         6958
-# ... with 595 more rows, and 55 more variables:
+ 1              2 &quot;Holiday Start \U~   48469.        8313         8619
+ 2              2 &quot;Run of Prayer an~    6847.        2767         2785
+ 3              2 &quot;Astoria After Ru~    5037.        2742         3314
+ 4              2 &quot;Hessen Kassel Wa~   31153.        4699         5267
+ 5              2 &quot;Bambi Run&quot;           5888.        2421         2869
+ 6              2 &quot;Lindich Backward~   33208.        4909         6071
+ 7              2 &quot;Monastery Ride&quot;     74154.       10721        12500
+ 8              2 &quot;Chapeau Sprint &quot;    34380         5001         5388
+ 9              2 &quot;Morning Run&quot;         5518.        2345         2563
+10              2 &quot;Binsenbol Afterw~   10022.        3681         6447
+# ... with 598 more rows, and 55 more variables:
 #   total_elevation_gain &lt;dbl&gt;, type &lt;chr&gt;, workout_type &lt;int&gt;,
 #   id &lt;dbl&gt;, external_id &lt;chr&gt;, upload_id &lt;dbl&gt;, start_date &lt;dttm&gt;,
 #   start_date_local &lt;chr&gt;, timezone &lt;chr&gt;, utc_offset &lt;dbl&gt;,
@@ -1826,9 +1840,8 @@ package" />
 <div class="sourceCode">
 <pre class="sourceCode r"><code class="sourceCode r"><span class="va">pre_process_act</span> <span class="op">&lt;-</span> <span class="kw">function</span><span class="op">(</span><span class="va">df_act_raw</span>, <span class="va">athlete_id</span><span class="op">)</span> <span class="op">{</span>
   <span class="va">df_act</span> <span class="op">&lt;-</span> <span class="va">df_act_raw</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span>
-    <span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate.html">mutate</a></span><span class="op">(</span>
-      <span class="fu"><a href="https://dplyr.tidyverse.org/reference/across.html">across</a></span><span class="op">(</span><span class="fu"><a href="https://tidyselect.r-lib.org/reference/starts_with.html">contains</a></span><span class="op">(</span><span class="st">&quot;id&quot;</span><span class="op">)</span>, <span class="va">as.character</span><span class="op">)</span>,
-      `athlete.id` <span class="op">=</span> <span class="va">athlete_id</span><span class="op">)</span>
+    <span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate.html">mutate</a></span><span class="op">(</span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/across.html">across</a></span><span class="op">(</span><span class="fu"><a href="https://tidyselect.r-lib.org/reference/starts_with.html">contains</a></span><span class="op">(</span><span class="st">&quot;id&quot;</span><span class="op">)</span>, <span class="va">as.character</span><span class="op">)</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span>
+    <span class="fu"><a href="https://dplyr.tidyverse.org/reference/rename.html">rename</a></span><span class="op">(</span>athlete_id <span class="op">=</span> <span class="va">`athlete.id`</span><span class="op">)</span>
 <span class="op">}</span>
 </code></pre>
 </div>
@@ -1926,20 +1939,20 @@ package" />
 </div>
 <p>The data now is represented by one row per measurement series:</p>
 <div class="layout-chunk" data-layout="l-body">
-<pre><code># A tibble: 4,821 x 6
+<pre><code># A tibble: 4,846 x 6
    type            data     series_type original_size resolution id   
    &lt;chr&gt;           &lt;list&gt;   &lt;chr&gt;               &lt;int&gt; &lt;chr&gt;      &lt;chr&gt;
- 1 moving          &lt;lgl [4~ distance             4706 high       6218~
- 2 latlng          &lt;dbl [4~ distance             4706 high       6218~
- 3 velocity_smooth &lt;dbl [4~ distance             4706 high       6218~
- 4 grade_smooth    &lt;dbl [4~ distance             4706 high       6218~
- 5 distance        &lt;dbl [4~ distance             4706 high       6218~
- 6 altitude        &lt;dbl [4~ distance             4706 high       6218~
- 7 heartrate       &lt;int [4~ distance             4706 high       6218~
- 8 time            &lt;int [4~ distance             4706 high       6218~
- 9 moving          &lt;lgl [3~ distance              301 high       6213~
-10 latlng          &lt;dbl [3~ distance              301 high       6213~
-# ... with 4,811 more rows</code></pre>
+ 1 moving          &lt;lgl [8~ distance             8287 high       6289~
+ 2 latlng          &lt;dbl [8~ distance             8287 high       6289~
+ 3 velocity_smooth &lt;dbl [8~ distance             8287 high       6289~
+ 4 grade_smooth    &lt;dbl [8~ distance             8287 high       6289~
+ 5 distance        &lt;dbl [8~ distance             8287 high       6289~
+ 6 altitude        &lt;dbl [8~ distance             8287 high       6289~
+ 7 heartrate       &lt;int [8~ distance             8287 high       6289~
+ 8 time            &lt;int [8~ distance             8287 high       6289~
+ 9 moving          &lt;lgl [3~ distance              341 high       6271~
+10 latlng          &lt;dbl [3~ distance              341 high       6271~
+# ... with 4,836 more rows</code></pre>
 </div>
 <p>Turn the data into a wide format:</p>
 <div class="layout-chunk" data-layout="l-body">
@@ -1972,20 +1985,20 @@ package" />
 </div>
 <p>In this format every activity is one row again:</p>
 <div class="layout-chunk" data-layout="l-body">
-<pre><code># A tibble: 605 x 14
+<pre><code># A tibble: 608 x 14
    series_type original_size resolution id         moving    latlng   
    &lt;chr&gt;               &lt;int&gt; &lt;chr&gt;      &lt;chr&gt;      &lt;list&gt;    &lt;list&gt;   
- 1 distance             4706 high       6218628649 &lt;lgl [4,~ &lt;dbl [4,~
- 2 distance              301 high       6213800583 &lt;lgl [30~ &lt;dbl [30~
- 3 distance             4905 high       6179655557 &lt;lgl [4,~ &lt;dbl [4,~
- 4 distance            10640 high       6160486739 &lt;lgl [10~ &lt;dbl [10~
- 5 distance             4969 high       6153936896 &lt;lgl [4,~ &lt;dbl [4,~
- 6 distance             2073 high       6115020306 &lt;lgl [2,~ &lt;dbl [2,~
- 7 distance             1158 high       6097842884 &lt;lgl [1,~ &lt;dbl [1,~
- 8 distance             8387 high       6091990268 &lt;lgl [8,~ &lt;dbl [8,~
- 9 distance             5587 high       6073551706 &lt;lgl [5,~ &lt;dbl [5,~
-10 distance             5281 high       6057232328 &lt;lgl [5,~ &lt;dbl [5,~
-# ... with 595 more rows, and 8 more variables:
+ 1 distance             8287 high       6289431308 &lt;lgl [8,~ &lt;dbl [8,~
+ 2 distance              341 high       6271965619 &lt;lgl [34~ &lt;dbl [34~
+ 3 distance              253 high       6250666002 &lt;lgl [25~ &lt;dbl [25~
+ 4 distance             4706 high       6218628649 &lt;lgl [4,~ &lt;dbl [4,~
+ 5 distance              301 high       6213800583 &lt;lgl [30~ &lt;dbl [30~
+ 6 distance             4905 high       6179655557 &lt;lgl [4,~ &lt;dbl [4,~
+ 7 distance            10640 high       6160486739 &lt;lgl [10~ &lt;dbl [10~
+ 8 distance             4969 high       6153936896 &lt;lgl [4,~ &lt;dbl [4,~
+ 9 distance             2073 high       6115020306 &lt;lgl [2,~ &lt;dbl [2,~
+10 distance             1158 high       6097842884 &lt;lgl [1,~ &lt;dbl [1,~
+# ... with 598 more rows, and 8 more variables:
 #   velocity_smooth &lt;list&gt;, grade_smooth &lt;list&gt;, distance &lt;list&gt;,
 #   altitude &lt;list&gt;, heartrate &lt;list&gt;, time &lt;list&gt;, cadence &lt;list&gt;,
 #   watts &lt;list&gt;</code></pre>
@@ -2028,20 +2041,20 @@ package" />
 </div>
 <p>After this step every row is one point in time and every column is (if present) a measurement at this point in time.</p>
 <div class="layout-chunk" data-layout="l-body">
-<pre><code># A tibble: 2,176,926 x 12
+<pre><code># A tibble: 2,185,807 x 12
    id         moving velocity_smooth grade_smooth distance altitude
    &lt;chr&gt;      &lt;lgl&gt;            &lt;dbl&gt;        &lt;dbl&gt;    &lt;dbl&gt;    &lt;dbl&gt;
- 1 6218628649 FALSE             0             1.8      0       527 
- 2 6218628649 TRUE              0             1.2      5       527.
- 3 6218628649 TRUE              0             0.9     10.9     527.
- 4 6218628649 TRUE              5.68          0.8     17       527.
- 5 6218628649 TRUE              5.81          0.8     23.3     527.
- 6 6218628649 TRUE              5.88          0.8     29.4     527.
- 7 6218628649 TRUE              6.13          0.8     35.6     527.
- 8 6218628649 TRUE              6.15          0       41.6     527.
- 9 6218628649 TRUE              6.14          0       47.8     527.
-10 6218628649 TRUE              6.13          0.8     53.9     527.
-# ... with 2,176,916 more rows, and 6 more variables:
+ 1 6289431308 FALSE             0               0      0       539.
+ 2 6289431308 TRUE              0               0      3.3     539.
+ 3 6289431308 TRUE              0               0      9.9     539.
+ 4 6289431308 TRUE              5.35            0     16.1     539.
+ 5 6289431308 TRUE              5.44            0     21.8     539.
+ 6 6289431308 TRUE              5.51            0     27.5     539.
+ 7 6289431308 TRUE              6.04            0     33.5     539.
+ 8 6289431308 TRUE              5.89            0     39.3     539.
+ 9 6289431308 TRUE              5.83            0     45.2     539.
+10 6289431308 TRUE              5.88            0     51.1     539.
+# ... with 2,185,797 more rows, and 6 more variables:
 #   heartrate &lt;dbl&gt;, time &lt;dbl&gt;, cadence &lt;dbl&gt;, watts &lt;dbl&gt;,
 #   lat &lt;dbl&gt;, lng &lt;dbl&gt;</code></pre>
 </div>
@@ -2060,7 +2073,7 @@ package" />
 <tbody>
 <tr class="odd">
 <td style="text-align: left;">gg_meas</td>
-<td style="text-align: left;">vis_meas(df_meas_pro)</td>
+<td style="text-align: left;">vis_meas(df_meas_rel)</td>
 <td style="text-align: left;">NA</td>
 <td style="text-align: left;">thorough</td>
 </tr>
