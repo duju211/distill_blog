@@ -1,5 +1,22 @@
 [
   {
+    "path": "posts/hanukkah-of-data-revisited-2023/",
+    "title": "Hanukkah of Data Revisited (2023)",
+    "description": "Revisit of fun data challenge from last year",
+    "author": [
+      {
+        "name": "Julian During",
+        "url": "www.datannery.com"
+      }
+    ],
+    "date": "2023-12-07",
+    "categories": [],
+    "contents": "\r\n\r\n\r\n\r\nTitle photo from Diana Polekhina on Unsplash.\r\nChallenge\r\n‘Hanukkah of Data’ is a data challenge\r\nwhere you have to solve 8 puzzles surrounding a fictional data set.\r\nTo solve the puzzles we use the following R libraries:\r\n\r\n\r\nlibrary(tidyverse)\r\n\r\n\r\nDay 1\r\nTo find the rug, we will need to contact a private investigator.\r\nThe last name of the investigator can be spelled by using the letters printed\r\non the phone buttons. For example: 2 has “ABC”, and 3 “DEF”, etc.\r\nThe key pad can be represented in R like this:\r\n\r\n\r\nphone_letter <- function() {\r\n  tibble(letter = letters) |>\r\n    mutate(\r\n      nr = ((row_number() - 1) %/% 3) + 2,\r\n      nr = as.character(if_else(nr == 10, 0, nr)))\r\n}\r\n\r\n\r\nWe then need to find the last name of each person. Transform the data so that\r\nevery letter is one row:\r\n\r\n\r\nlast_names <- function(df_customers) {\r\n  df_customers |>\r\n    transmute(\r\n      customerid,\r\n      last_name = map_chr(str_split(name, \"\\\\s+\"), last),\r\n      letter = str_split(last_name, \"\"),\r\n      phone_chr = str_remove_all(phone, \"-\")) |>\r\n    unnest(letter) |>\r\n    mutate(letter = str_to_lower(letter))\r\n}\r\n\r\n\r\nBy combining both data sources, we can answer the question:\r\n\r\n\r\ninvestigator <- function(df_last_names, df_phone_letter) {\r\n  df_last_names |>\r\n    left_join(df_phone_letter, by = \"letter\") |>\r\n    group_by(customerid, phone_chr) |>\r\n    summarise(phone_pro = str_flatten(nr), .groups = \"drop\") |>\r\n    filter(phone_chr == phone_pro)\r\n}\r\n\r\n\r\n\r\n\r\n  \r\n  customerid\r\n      name\r\n      phone\r\n    1208\r\nSam Tannenbaum\r\n826-636-2286\r\n\r\n\r\n\r\n\r\n",
+    "preview": "https://raw.githubusercontent.com/duju211/hanukkah_of_data/master/diana-polekhina-F6tbedzUQvw-unsplash.jpg",
+    "last_modified": "2023-12-07T22:30:28+01:00",
+    "input_file": {}
+  },
+  {
     "path": "posts/advent-of-code/",
     "title": "Advent of Code",
     "description": "My attempts on the yearly Coding Competition",
