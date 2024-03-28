@@ -18,7 +18,7 @@ visibility: hidden;
  <!--radix_placeholder_import_source-->
 
 <script type="text/json" id="radix-import-source">
-{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["url","sha1"]}},"value":[{"type":"character","attributes":{},"value":["https://github.com/duju211/rvest_tsg"]},{"type":"character","attributes":{},"value":["9bdb8057b9c6f1a80874a0610db8f633d33a7bf0"]}]}
+{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["url","sha1"]}},"value":[{"type":"character","attributes":{},"value":["https://github.com/duju211/rvest_tsg"]},{"type":"character","attributes":{},"value":["4d264368618dad74161466a58ea934256f978b38"]}]}
 </script>
 <!--/radix_placeholder_import_source-->
 
@@ -96,6 +96,7 @@ code span.wa { color: #5e5e5e; font-style: italic; }
 
 <meta property="description" itemprop="description" content="Scraping my local Football Club&#39;s News Data"/>
 
+<link rel="canonical" href="https://www.datannery.com/posts/friendly-webscraping/"/>
 <link rel="license" href="https://creativecommons.org/licenses/by/4.0/"/>
 
 <!--  https://schema.org/Article -->
@@ -107,19 +108,34 @@ code span.wa { color: #5e5e5e; font-style: italic; }
 <meta property="og:title" content="Datannery: Friendly Webscraping"/>
 <meta property="og:type" content="article"/>
 <meta property="og:description" content="Scraping my local Football Club&#39;s News Data"/>
+<meta property="og:url" content="https://www.datannery.com/posts/friendly-webscraping/"/>
+<meta property="og:image" content="https://www.datannery.com/posts/friendly-webscraping/distill-preview.png"/>
+<meta property="og:image:width" content="2100"/>
+<meta property="og:image:height" content="2100"/>
 <meta property="og:locale" content="en_US"/>
 <meta property="og:site_name" content="Datannery"/>
 
 <!--  https://dev.twitter.com/cards/types/summary -->
-<meta property="twitter:card" content="summary"/>
+<meta property="twitter:card" content="summary_large_image"/>
 <meta property="twitter:title" content="Datannery: Friendly Webscraping"/>
 <meta property="twitter:description" content="Scraping my local Football Club&#39;s News Data"/>
+<meta property="twitter:url" content="https://www.datannery.com/posts/friendly-webscraping/"/>
+<meta property="twitter:image" content="https://www.datannery.com/posts/friendly-webscraping/distill-preview.png"/>
+<meta property="twitter:image:width" content="2100"/>
+<meta property="twitter:image:height" content="2100"/>
 
+<!--  https://scholar.google.com/intl/en/scholar/inclusion.html#indexing -->
+<meta name="citation_title" content="Datannery: Friendly Webscraping"/>
+<meta name="citation_fulltext_html_url" content="https://www.datannery.com/posts/friendly-webscraping/"/>
+<meta name="citation_fulltext_world_readable" content=""/>
+<meta name="citation_online_date" content="2024/03/28"/>
+<meta name="citation_publication_date" content="2024/03/28"/>
+<meta name="citation_author" content="Julian During"/>
 <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
 <script type="text/json" id="radix-rmarkdown-metadata">
-{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","author","date","output","params","editor_options","creative_commons","repository_url"]}},"value":[{"type":"character","attributes":{},"value":["Friendly Webscraping"]},{"type":"character","attributes":{},"value":["Scraping my local Football Club's News Data"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name"]}},"value":[{"type":"character","attributes":{},"value":["Julian During"]}]}]},{"type":"character","attributes":{},"value":["03-28-2024"]},{"type":"character","attributes":{},"value":["distill::distill_article"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["interactive","plot_path"]}},"value":[{"type":"logical","attributes":{},"value":[true]},{"type":"character","attributes":{},"value":["tsg_word_cloud.png"]}]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["chunk_output_type"]}},"value":[{"type":"character","attributes":{},"value":["console"]}]},{"type":"character","attributes":{},"value":["CC BY"]},{"type":"character","attributes":{},"value":["https://github.com/duju211/rvest_tsg"]}]}
+{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","author","date","output","params","editor_options","creative_commons","repository_url","base_url","citation_url","canonical_url"]}},"value":[{"type":"character","attributes":{},"value":["Friendly Webscraping"]},{"type":"character","attributes":{},"value":["Scraping my local Football Club's News Data"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name"]}},"value":[{"type":"character","attributes":{},"value":["Julian During"]}]}]},{"type":"character","attributes":{},"value":["03-28-2024"]},{"type":"character","attributes":{},"value":["distill::distill_article"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["interactive","plot_path"]}},"value":[{"type":"logical","attributes":{},"value":[true]},{"type":"character","attributes":{},"value":["tsg_word_cloud.png"]}]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["chunk_output_type"]}},"value":[{"type":"character","attributes":{},"value":["console"]}]},{"type":"character","attributes":{},"value":["CC BY"]},{"type":"character","attributes":{},"value":["https://github.com/duju211/rvest_tsg"]},{"type":"character","attributes":{},"value":["https://www.datannery.com/posts/friendly-webscraping/"]},{"type":"character","attributes":{},"value":["https://www.datannery.com/posts/friendly-webscraping/"]},{"type":"character","attributes":{},"value":["https://www.datannery.com/posts/friendly-webscraping/"]}]}
 </script>
 <!--/radix_placeholder_rmarkdown_metadata-->
   
@@ -3747,6 +3763,16 @@ introduced in this blog post.</p>
   <p>If you see mistakes or want to suggest changes, please <a href="https://github.com/duju211/rvest_tsg/issues/new">create an issue</a> on the source repository.</p>
   <h3 id="reuse">Reuse</h3>
   <p>Text and figures are licensed under Creative Commons Attribution <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. Source code is available at <a href="https://github.com/duju211/rvest_tsg">https://github.com/duju211/rvest_tsg</a>, unless otherwise noted. The figures that have been reused from other sources don't fall under this license and can be recognized by a note in their caption: "Figure from ...".</p>
+  <h3 id="citation">Citation</h3>
+  <p>For attribution, please cite this work as</p>
+  <pre class="citation-appendix short">During (2024, March 28). Datannery: Friendly Webscraping. Retrieved from https://www.datannery.com/posts/friendly-webscraping/</pre>
+  <p>BibTeX citation</p>
+  <pre class="citation-appendix long">@misc{during2024friendly,
+  author = {During, Julian},
+  title = {Datannery: Friendly Webscraping},
+  url = {https://www.datannery.com/posts/friendly-webscraping/},
+  year = {2024}
+}</pre>
 </div>
 <!--/radix_placeholder_appendices-->
 <!--radix_placeholder_navigation_after_body-->
