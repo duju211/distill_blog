@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>Datannery</title>
+    <link>https://www.datannery.com/</link>
+    <atom:link href="https://www.datannery.com/index.xml" rel="self" type="application/rss+xml"/>
+    <description>Personal Blog of Julian During
+</description>
+    <generator>Distill</generator>
+    <lastBuildDate>Tue, 06 Aug 2024 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Deutschland Tour 2024</title>
+      <dc:creator>Julian During</dc:creator>
+      <link>https://www.datannery.com/posts/deutschland-tour-2024</link>
+      <description>Exploring the Route of this years 'Deutschland Tour' with R</description>
+      <guid>https://www.datannery.com/posts/deutschland-tour-2024</guid>
+      <pubDate>Tue, 06 Aug 2024 00:00:00 +0000</pubDate>
+      <media:content url="https://www.datannery.com/posts/deutschland-tour-2024/distill-preview.png" medium="image" type="image/png" width="1248" height="768"/>
+    </item>
+    <item>
+      <title>Getting Over It</title>
+      <dc:creator>Julian During</dc:creator>
+      <link>https://www.datannery.com/posts/getting-over-it</link>
+      <description>Visualising my Transalp bike ride</description>
+      <guid>https://www.datannery.com/posts/getting-over-it</guid>
+      <pubDate>Fri, 05 Apr 2024 00:00:00 +0000</pubDate>
+      <media:content url="https://www.datannery.com/posts/getting-over-it/distill-preview.png" medium="image" type="image/png" width="3779" height="2362"/>
+    </item>
+    <item>
+      <title>Friendly Webscraping</title>
+      <dc:creator>Julian During</dc:creator>
+      <link>https://www.datannery.com/posts/friendly-webscraping</link>
+      <description>Scraping my local Football Club's News Data</description>
+      <guid>https://www.datannery.com/posts/friendly-webscraping</guid>
+      <pubDate>Thu, 28 Mar 2024 00:00:00 +0000</pubDate>
+      <media:content url="https://www.datannery.com/posts/friendly-webscraping/distill-preview.png" medium="image" type="image/png" width="2100" height="2100"/>
+    </item>
+    <item>
+      <title>Scraping Tour de France Data</title>
+      <dc:creator>Julian During</dc:creator>
+      <link>https://www.datannery.com/posts/scraping-tour-de-france-data</link>
+      <description>An article about friendly webscraping and a remarkable Time Trial</description>
+      <guid>https://www.datannery.com/posts/scraping-tour-de-france-data</guid>
+      <pubDate>Wed, 14 Feb 2024 00:00:00 +0000</pubDate>
+      <media:content url="https://raw.githubusercontent.com/duju211/tour_tt/master/total_time.png" medium="image" type="image/png"/>
+    </item>
+    <item>
+      <title>Hanukkah of Data Revisited (2023 / Speedrun)</title>
+      <dc:creator>Julian During</dc:creator>
+      <link>https://www.datannery.com/posts/hanukkah-of-data-revisited-2023-speedrun</link>
+      <description>Revisit of fun data challenge from last year</description>
+      <guid>https://www.datannery.com/posts/hanukkah-of-data-revisited-2023-speedrun</guid>
+      <pubDate>Sun, 31 Dec 2023 00:00:00 +0000</pubDate>
+      <media:content url="https://raw.githubusercontent.com/duju211/hanukkah_of_data/master/diana-polekhina-F6tbedzUQvw-unsplash.jpg" medium="image" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>Hanukkah of Data</title>
+      <dc:creator>Julian During</dc:creator>
+      <link>https://www.datannery.com/posts/hanukkah-of-data</link>
+      <description>Short data challenge released over 8 days of Hanukkah in 2022</description>
+      <guid>https://www.datannery.com/posts/hanukkah-of-data</guid>
+      <pubDate>Sun, 15 Jan 2023 00:00:00 +0000</pubDate>
+      <media:content url="https://github.com/duju211/hanukkah_of_data/blob/master/hanukkah.png?raw=true" medium="image" type="text/plain"/>
+    </item>
+    <item>
+      <title>Hour Record Pacing Strategies</title>
+      <dc:creator>Julian During</dc:creator>
+      <link>https://www.datannery.com/posts/hour-record-pacing-strategies</link>
+      <description>A Comparison of Hour Record Pacing Strategies</description>
+      <guid>https://www.datannery.com/posts/hour-record-pacing-strategies</guid>
+      <pubDate>Sun, 20 Nov 2022 00:00:00 +0000</pubDate>
+      <media:content url="https://raw.githubusercontent.com/duju211/ganna_hour_record/master/file_out/gg_time_all.png" medium="image" type="image/png"/>
+    </item>
+    <item>
+      <title>Mountain Race</title>
+      <dc:creator>Julian During</dc:creator>
+      <link>https://www.datannery.com/posts/mountain-race</link>
+      <description>Animation of my Strava efforts on one of my local climbs</description>
+      <guid>https://www.datannery.com/posts/mountain-race</guid>
+      <pubDate>Wed, 30 Mar 2022 00:00:00 +0000</pubDate>
+      <media:content url="https://github.com/duju211/mountain_race/blob/master/README_files/figure-markdown_strict/gg_lochen-1.png?raw=true" medium="image" type="text/plain"/>
+    </item>
+    <item>
+      <title>Strava Data</title>
+      <dc:creator>Julian During</dc:creator>
+      <link>https://www.datannery.com/posts/strava-data</link>
+      <description>Article on how to effectively scrape and store Strava data using the `targets`
+package</description>
+      <guid>https://www.datannery.com/posts/strava-data</guid>
+      <pubDate>Thu, 03 Mar 2022 00:00:00 +0000</pubDate>
+      <media:content url="https://www.datannery.com/posts/strava-data/distill-preview.png" medium="image" type="image/png" width="2100" height="2100"/>
+    </item>
+    <item>
+      <title>Hex Sticker</title>
+      <dc:creator>Julian During</dc:creator>
+      <link>https://www.datannery.com/posts/hex_sticker</link>
+      <description>How to create a hex sticker for a new package</description>
+      <guid>https://www.datannery.com/posts/hex_sticker</guid>
+      <pubDate>Sun, 23 May 2021 00:00:00 +0000</pubDate>
+      <media:content url="https://www.datannery.com/posts/hex_sticker/distill-preview.png" medium="image" type="image/png" width="1161" height="701"/>
+    </item>
+    <item>
+      <title>Getting Over It</title>
+      <dc:creator>Julian During</dc:creator>
+      <link>https://www.datannery.com/posts/transalp</link>
+      <description>Visualising my Transalp bike ride</description>
+      <guid>https://www.datannery.com/posts/transalp</guid>
+      <pubDate>Sun, 23 May 2021 00:00:00 +0000</pubDate>
+      <media:content url="https://www.datannery.com/posts/transalp/distill-preview.png" medium="image" type="image/png" width="1248" height="768"/>
+    </item>
+  </channel>
+</rss>

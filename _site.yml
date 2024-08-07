@@ -2,6 +2,7 @@ name: "distill_blog"
 title: "Datannery"
 description: |
   Personal Blog of Julian During
+base_url: https://www.datannery.com/
 output_dir: "_site"
 navbar:
   right:
