@@ -10,7 +10,7 @@
 
 /* Optional: embed custom fonts here with `@import`          */
 /* This must remain at the top of this file.                 */
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code');
 
 html {
@@ -27,10 +27,10 @@ html {
   --aside-color:     rgba(0, 0, 0, 0.6);
   --fig-cap-color:   rgba(0, 0, 0, 0.6);
   /*-- Specify custom fonts ~~~ must be imported above   --*/
-  --heading-font:    "Josefin Slab", serif;
+  --heading-font:    "Nunito", serif;
   --mono-font:       "Fira Code", monospace;
-  --body-font:       "Josefin Slab", serif;
-  --navbar-font:     "Josefin Slab", serif;  /* websites + blogs only */
+  --body-font:       "Nunito", serif;
+  --navbar-font:     "Nunito", serif;  /* websites + blogs only */
 }
 
 /*-- ARTICLE METADATA --*/
