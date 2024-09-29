@@ -7,7 +7,15 @@
     <description>Personal Blog of Julian During
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Tue, 24 Sep 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 29 Sep 2024 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Tour de France Route Analysis</title>
+      <dc:creator>Julian During</dc:creator>
+      <link>https://www.datannery.com/posts/tour-de-france-route-analysis</link>
+      <description>Plotting Tour de France stages onto a single map</description>
+      <guid>https://www.datannery.com/posts/tour-de-france-route-analysis</guid>
+      <pubDate>Sun, 29 Sep 2024 00:00:00 +0000</pubDate>
+    </item>
     <item>
       <title>Deutschland Tour 2024</title>
       <dc:creator>Julian During</dc:creator>
