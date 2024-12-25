@@ -7,7 +7,16 @@
     <description>Personal Blog of Julian During
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Tue, 15 Oct 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 25 Dec 2024 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Vendée Globe</title>
+      <dc:creator>Julian During</dc:creator>
+      <link>https://www.datannery.com/posts/vende-globe</link>
+      <description>Scraping and visualising Vendée Globe Data.</description>
+      <guid>https://www.datannery.com/posts/vende-globe</guid>
+      <pubDate>Wed, 25 Dec 2024 00:00:00 +0000</pubDate>
+      <media:content url="https://codeberg.org/duju211/vendee_globe/raw/branch/master/README_files/figure-markdown_strict/plot_class_vendee_line-1.png" medium="image" type="image/png"/>
+    </item>
     <item>
       <title>Tour de France Route Analysis</title>
       <dc:creator>Julian During</dc:creator>
