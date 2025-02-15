@@ -13,3 +13,8 @@ Find me online:
 
   - `r fontawesome::fa("mastodon")` [`@duringju`](https://fosstodon.org/@duringju)
   - `r fontawesome::fa("github")` [`@duju211`](https://github.com/duju211)
+  
+```{=html}
+<a rel="me" href="https://fosstodon.org/@duringju">Mastodon</a>
+```
+
