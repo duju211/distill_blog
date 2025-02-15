@@ -8,13 +8,3 @@ knitr::opts_chunk$set(echo = FALSE)
 
 Hi there! This is the personal blog of Julian During. In this blog I combine
 my professional and personal interest in Data Science and Analytics.
-
-Find me online:
-
-  - `r fontawesome::fa("mastodon")` [`@duringju`](https://fosstodon.org/@duringju)
-  - `r fontawesome::fa("github")` [`@duju211`](https://github.com/duju211)
-  
-```{=html}
-<a rel="me" href="https://fosstodon.org/@duringju">Mastodon</a>
-```
-
