@@ -2,9 +2,11 @@
 title: "Datannery"
 site: distill::distill_website
 listing: posts
+editor_options: 
+  chunk_output_type: console
 ---
 
 ```{r, echo=FALSE}
-htmltools::a(rel = "me", href = "https://fosstodon.org/@duringju")
+htmltools::a(rel = "me", href = "https://fosstodon.org/@duringju", "Mastodon")
 ```
 
