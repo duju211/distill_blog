@@ -4,7 +4,7 @@ site: distill::distill_website
 listing: posts
 ---
 
-```{r, echo=FALSE, results='asis'}
-htmltools::a(href = "https://fosstodon.org/@duringju", rel = "me")
+```{r, echo=FALSE}
+htmltools::a(rel = "me", href = "https://fosstodon.org/@duringju")
 ```
 
