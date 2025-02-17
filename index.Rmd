@@ -5,8 +5,3 @@ listing: posts
 editor_options: 
   chunk_output_type: console
 ---
-
-```{r, echo=FALSE}
-htmltools::a(rel = "me", href = "https://fosstodon.org/@duringju", "Mastodon")
-```
-
