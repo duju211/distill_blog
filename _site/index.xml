@@ -7,7 +7,16 @@
     <description>Personal Blog of Julian During
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Sat, 15 Feb 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 13 Nov 2025 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Hairy Football Challenge</title>
+      <dc:creator>Julian During</dc:creator>
+      <link>https://www.datannery.com/posts/hairy-football-challenge</link>
+      <description>Calculate mean times between winning streaks of football clubs using sliding
+window calculations.</description>
+      <guid>https://www.datannery.com/posts/hairy-football-challenge</guid>
+      <pubDate>Thu, 13 Nov 2025 00:00:00 +0000</pubDate>
+    </item>
     <item>
       <title>Vendée Globe</title>
       <dc:creator>Julian During</dc:creator>
